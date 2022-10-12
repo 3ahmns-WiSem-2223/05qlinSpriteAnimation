@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class SimpleSpriteAnimator : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Sprite[] idle;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        Debug.Log("Anzahl Elemente" + idle.Length);
     }
 }
